@@ -235,4 +235,14 @@
         return NO;
 }
 
+//是否只包含数字和保留两位小数 "."(只有一位)  提现金额使用
+- (BOOL)regularWithdrawModey {
+    NSString *regex = @"^\\d*\\.{0,1}\\d{0,2}$";
+    NSPredicate *regextestcu = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+    if ([regextestcu evaluateWithObject:self]) {
+        return YES;
+    }
+    return NO;
+}
+
 @end

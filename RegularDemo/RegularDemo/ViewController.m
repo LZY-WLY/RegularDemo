@@ -45,8 +45,12 @@
 //    NSString *str = @"12378945678";
 //    [str regularTelecomPhoneNum] ? NSLog(@"验证电信手机号码正确") : NSLog(@"验证电信手机号码错误");
     
-    NSString *str = @"12378945678@qq.com";
-    [str regularEmail] ? NSLog(@"验证邮箱格式正确") : NSLog(@"验证邮箱格式错误");
+//    NSString *str = @"12378945678@qq.com";
+//    [str regularEmail] ? NSLog(@"验证邮箱格式正确") : NSLog(@"验证邮箱格式错误");
+    
+    NSString *str = @"字.1";
+    [str regularWithdrawModey] ? NSLog(@"提现金额格式正确") : NSLog(@"提现金额格式错误");
+    
 }
 
 

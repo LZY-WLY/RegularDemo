@@ -86,4 +86,11 @@
  */
 - (BOOL)regularBankCard;
 
+/**
+ 是否只包含数字和保留两位小数 "."(只有一位)  提现金额使用
+ 
+ @return NO: 不是   YES: 是
+ */
+- (BOOL)regularWithdrawModey;
+
 @end
