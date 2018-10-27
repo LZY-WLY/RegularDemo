@@ -51,6 +51,8 @@
     NSString *str = @"字.1";
     [str regularWithdrawModey] ? NSLog(@"提现金额格式正确") : NSLog(@"提现金额格式错误");
     
+    NSLog(@"ceshi  %f", 4. * 100);
+    
 }
 
 

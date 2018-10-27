@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C23C61C121840EDB00305562 /* NSString+Regular.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C61BF21840EDB00305562 /* NSString+Regular.m */; };
 		C2FF33C5212FA5CA00A37F50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FF33C4212FA5CA00A37F50 /* AppDelegate.m */; };
 		C2FF33C8212FA5CA00A37F50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FF33C7212FA5CA00A37F50 /* ViewController.m */; };
 		C2FF33CB212FA5CA00A37F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FF33C9212FA5CA00A37F50 /* Main.storyboard */; };
 		C2FF33CD212FA5CB00A37F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FF33CC212FA5CB00A37F50 /* Assets.xcassets */; };
 		C2FF33D0212FA5CB00A37F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FF33CE212FA5CB00A37F50 /* LaunchScreen.storyboard */; };
 		C2FF33D3212FA5CB00A37F50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FF33D2212FA5CB00A37F50 /* main.m */; };
-		C2FF33DE212FA68300A37F50 /* NSString+Regular.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FF33DD212FA68300A37F50 /* NSString+Regular.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C23C61BF21840EDB00305562 /* NSString+Regular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Regular.m"; sourceTree = "<group>"; };
+		C23C61C021840EDB00305562 /* NSString+Regular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Regular.h"; sourceTree = "<group>"; };
 		C2FF33C0212FA5CA00A37F50 /* RegularDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegularDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FF33C3212FA5CA00A37F50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2FF33C4212FA5CA00A37F50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		C2FF33CF212FA5CB00A37F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2FF33D1212FA5CB00A37F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2FF33D2212FA5CB00A37F50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C2FF33DC212FA68300A37F50 /* NSString+Regular.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Regular.h"; sourceTree = "<group>"; };
-		C2FF33DD212FA68300A37F50 /* NSString+Regular.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Regular.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +69,9 @@
 				C2FF33CC212FA5CB00A37F50 /* Assets.xcassets */,
 				C2FF33CE212FA5CB00A37F50 /* LaunchScreen.storyboard */,
 				C2FF33D1212FA5CB00A37F50 /* Info.plist */,
+				C23C61C021840EDB00305562 /* NSString+Regular.h */,
+				C23C61BF21840EDB00305562 /* NSString+Regular.m */,
 				C2FF33D2212FA5CB00A37F50 /* main.m */,
-				C2FF33DC212FA68300A37F50 /* NSString+Regular.h */,
-				C2FF33DD212FA68300A37F50 /* NSString+Regular.m */,
 			);
 			path = RegularDemo;
 			sourceTree = "<group>";
@@ -146,9 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2FF33DE212FA68300A37F50 /* NSString+Regular.m in Sources */,
 				C2FF33C8212FA5CA00A37F50 /* ViewController.m in Sources */,
 				C2FF33D3212FA5CB00A37F50 /* main.m in Sources */,
+				C23C61C121840EDB00305562 /* NSString+Regular.m in Sources */,
 				C2FF33C5212FA5CA00A37F50 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

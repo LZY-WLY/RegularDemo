@@ -20,6 +20,19 @@
     }
 }
 
+//是否只包含中文或者英文
+- (BOOL)regularChineseOrEnglish {
+    NSString *regexStr = @"[\u4e00-\u9fa5a-zA-Z]+";
+    NSPredicate *predStr = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regexStr];
+    if (![predStr evaluateWithObject:self]) {
+        return NO;
+    }else {
+        return YES;
+    }
+}
+
+
+
 //是否只包含数字
 - (BOOL)regularNumber {
     NSString *regexNumber = @"[0-9]*";
@@ -243,6 +256,12 @@
         return YES;
     }
     return NO;
+}
+
+//除去字符串中非数字
+- (instancetype)regularPhoneNumber {
+    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:@"[^\\d]" options:0 error:NULL];
+    return [regular stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, [self length]) withTemplate:@""];
 }
 
 @end

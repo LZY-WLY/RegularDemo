@@ -17,6 +17,13 @@
 - (BOOL)regularChinese;
 
 /**
+ 是否只包含中文或者英文
+ 
+ @return NO: 不是   YES: 是
+ */
+- (BOOL)regularChineseOrEnglish;
+
+/**
  是否只包含数字
 
  @return NO: 不是   YES: 是
@@ -92,5 +99,12 @@
  @return NO: 不是   YES: 是
  */
 - (BOOL)regularWithdrawModey;
+
+/**
+ 除去字符串中非数字
+
+ @return 处理过的字符串
+ */
+- (instancetype)regularPhoneNumber;
 
 @end
